@@ -31,4 +31,18 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 4;
     }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position) {
+            case 0:
+                return "Numbers";
+            case 1:
+                return "Phrases";
+            case 2:
+                return "Colors";
+            default:
+                return "Family";
+        }
+    }
 }
